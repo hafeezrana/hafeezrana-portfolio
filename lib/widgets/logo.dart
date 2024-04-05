@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
-import 'package:portfolio/utils/Image_asset_constants.dart';
 import 'package:portfolio/utils/breakpoints.dart';
+import 'package:portfolio/utils/image_asset_constants.dart';
 
 class Logo extends StatelessWidget {
   final double width;
@@ -18,8 +18,12 @@ class Logo extends StatelessWidget {
       child: MouseRegion(
         cursor: SystemMouseCursors.click,
         child: Image.asset(ImageAssetConstants.logo,
-            width: width >= Breakpoints.xlg ? width * 0.14 : Breakpoints.xlg * 0.14,
-            height: width >= Breakpoints.xlg ? 0.04 * width : 0.04 * Breakpoints.xlg),
+            width: width >= Breakpoints.xlg
+                ? width * 0.14
+                : Breakpoints.xlg * 0.14,
+            height: width >= Breakpoints.xlg
+                ? 0.04 * width
+                : 0.04 * Breakpoints.xlg),
       ),
     );
   }

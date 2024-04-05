@@ -25,28 +25,22 @@ class NavBarItem extends StatelessWidget {
           splashColor: Colors.white60,
           onTap: () => onTap(),
           child: Container(
-            height: 40.0,
+            height: 50.0,
             width: 50,
             alignment: Alignment.center,
             margin: const EdgeInsets.symmetric(horizontal: 18.0),
             child: Column(
               mainAxisAlignment: MainAxisAlignment.center,
               children: [
-                const SizedBox(
-                  height: 6,
-                ),
+                const SizedBox(height: 6),
                 Text(
                   text,
                   style: TextStyle(
                     fontSize: 12.0,
-                    color: data.value
-                        ? CustomColors.primary
-                        : Colors.white,
+                    color: data.value ? CustomColors.primary : Colors.white,
                   ),
                 ),
-                const SizedBox(
-                  height: 6,
-                ),
+                const SizedBox(height: 6),
                 data.value
                     ? Container(
                         width: 40,

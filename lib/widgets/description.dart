@@ -7,8 +7,7 @@ import 'package:animated_text_kit/animated_text_kit.dart';
 class Description extends StatelessWidget {
   final bool isVertical;
   final double width;
-  const Description(
-      {required this.isVertical, required this.width, Key? key})
+  const Description({required this.isVertical, required this.width, Key? key})
       : super(key: key);
 
   @override
@@ -20,21 +19,27 @@ class Description extends StatelessWidget {
             isVertical ? CrossAxisAlignment.center : CrossAxisAlignment.start,
         children: [
           Container(
-              margin: const EdgeInsets.symmetric(horizontal: 10),
-              width: 135,
-              height: 40,
-              alignment: Alignment.center,
-              color: CustomColors.primary,
-              child: Center(
-                  child: Text('Software Engineer',
-                      style: GoogleFonts.getFont('Days One',
-                          color: Colors.black, fontSize: 10)))),
+            margin: const EdgeInsets.symmetric(horizontal: 10),
+            width: 135,
+            height: 40,
+            alignment: Alignment.center,
+            color: CustomColors.primary,
+            child: Center(
+              child: Text(
+                'Flutter Developer',
+                style: GoogleFonts.getFont('Days One',
+                    color: Colors.black, fontSize: 10),
+              ),
+            ),
+          ),
           SizedBox(height: 0.015 * width),
-          Text('Talk is cheap.',
-              style: GoogleFonts.getFont('Delius',
-                  color: Colors.white, fontSize: 30)),
+          Text(
+            "Let's digitize your business",
+            style: GoogleFonts.getFont('Delius',
+                color: Colors.white, fontSize: 30),
+          ),
           const SizedBox(height: 5),
-          Text('Show me the code.',
+          Text('',
               style: GoogleFonts.getFont('Delius',
                   color: Colors.white, fontSize: 30)),
           const SizedBox(height: 20),
@@ -46,22 +51,28 @@ class Description extends StatelessWidget {
               pause: const Duration(seconds: 2),
               animatedTexts: [
                 TyperAnimatedText(
-                    "I'm developing mobile,frontend and backend applications",
-                    textAlign: isVertical ? TextAlign.center : TextAlign.start,
-                    textStyle: GoogleFonts.getFont('Delius',
-                        color: CustomColors.gray,
-                        fontSize: 15)),
+                  "I'm Hafeez Rana seasonal flutter developer with hands on experience in building high quality hybrid mobile applications using flutter framework",
+                  textAlign: isVertical ? TextAlign.center : TextAlign.start,
+                  speed: const Duration(milliseconds: 50),
+                  textStyle: GoogleFonts.getFont(
+                    'Delius',
+                    color: CustomColors.gray,
+                    fontSize: 15,
+                  ),
+                ),
               ],
             ),
           ),
           InkWell(
             onTap: () async => !await launch(
-                'https://mail.google.com/mail/u/0/?fs=1&to=khalidlionel.2089@gmail.com&tf=cm'),
-            child: Text("Let's chat",
-                style: GoogleFonts.getFont('Delius',
-                    decoration: TextDecoration.underline,
-                    color: CustomColors.primary,
-                    fontSize: 20)),
+                'https://mail.google.com/mail/u/0/?fs=1&to=ranahafeez6820@gmail.com&tf=cm'),
+            child: Text(
+              "Let's chat",
+              style: GoogleFonts.getFont('Delius',
+                  decoration: TextDecoration.underline,
+                  color: CustomColors.primary,
+                  fontSize: 20),
+            ),
           )
         ],
       ),

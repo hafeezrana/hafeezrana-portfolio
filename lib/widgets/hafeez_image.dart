@@ -2,9 +2,9 @@ import 'package:flutter/material.dart';
 import 'package:portfolio/utils/custom_colors.dart';
 import 'package:portfolio/utils/image_asset_constants.dart';
 
-class KhalidImage extends StatelessWidget {
+class HafeezImage extends StatelessWidget {
   final double width;
-  const KhalidImage({
+  const HafeezImage({
     required this.width,
     Key? key,
   }) : super(key: key);
@@ -15,38 +15,21 @@ class KhalidImage extends StatelessWidget {
       alignment: Alignment.center,
       children: [
         Container(
-          constraints:const BoxConstraints(maxWidth:370),
-          child: Image.asset(
-            ImageAssetConstants.khalid,
-            width: width * 0.29,
-            height: width * 0.3,
+          constraints: const BoxConstraints(maxWidth: 300),
+          child: const CircleAvatar(
+            radius: 100,
+            foregroundImage: AssetImage(
+              ImageAssetConstants.hafeez,
+            ),
           ),
         ),
         Positioned(
-          top: width * 0.17,
-          left: 0,
-          child: Image.asset(
-            ImageAssetConstants.pythonCircle,
-            width: width * 0.07,
-            height: width * 0.07,
-          ),
-        ),
-        Positioned(
-          top: width * 0.19,
-          right: width * 0.010,
+          top: width * 0.2,
+          right: width * 0.4,
           child: Image.asset(
             ImageAssetConstants.flutterCircle,
-            width: width * 0.083,
+            width: width * 0.07,
             height: width * 0.08,
-          ),
-        ),
-        Positioned(
-          top: width * 0.06,
-          right: width * 0.016,
-          child: Image.asset(
-            ImageAssetConstants.javaCircle,
-            width: width * 0.06,
-            height: width * 0.058,
           ),
         ),
         Positioned(
@@ -56,8 +39,11 @@ class KhalidImage extends StatelessWidget {
             width: width * 0.007,
             height: width * 0.007,
             decoration: const BoxDecoration(
-                color: CustomColors.primary,
-                borderRadius: BorderRadius.all(Radius.circular(50))),
+              color: CustomColors.primary,
+              borderRadius: BorderRadius.all(
+                Radius.circular(50),
+              ),
+            ),
           ),
         ),
         Positioned(

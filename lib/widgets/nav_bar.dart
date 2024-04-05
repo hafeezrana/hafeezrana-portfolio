@@ -35,12 +35,16 @@ class NavBar extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    Widget navBarRow = Stack(children: [
-      Padding(
-        padding: EdgeInsets.only(left: width * 0.04),
-        child: Logo(width: width,scrollController: scrollController,),
-      ),
-      Row(
+    Widget navBarRow = Stack(
+      children: [
+        Padding(
+          padding: EdgeInsets.only(left: width * 0.04),
+          child: Logo(
+            width: width,
+            scrollController: scrollController,
+          ),
+        ),
+        Row(
           crossAxisAlignment: CrossAxisAlignment.center,
           mainAxisAlignment: MainAxisAlignment.center,
           children: [
@@ -49,52 +53,37 @@ class NavBar extends StatelessWidget {
               onTap: () {},
             ),
             NavBarItem(
-                text: 'Skills', onTap: () => scrollToWidgetByKey(skillsKey)),
+              text: 'Skills',
+              onTap: () => scrollToWidgetByKey(skillsKey),
+            ),
             NavBarItem(
-              text: 'Intrests',
+              text: 'Interests',
               onTap: () => scrollToWidgetByKey(intrestsKey),
             ),
             const SizedBox(width: 60),
-          ]),
-      Row(mainAxisAlignment: MainAxisAlignment.end, children: [
-        const SizedBox(width: 50),
-        Row(children: const [
-          NavBarItemWithIcon(
-            text: 'github',
-            icon: ImageAssetConstants.github,
-            url: 'https://github.com/khalid-alsaleh-dev',
-          ),
-          SizedBox(width: 10),
-          NavBarItemWithIcon(
-              text: 'facebook',
-              icon: ImageAssetConstants.facebook,
-              url: 'https://www.facebook.com/khalid.alsaleh.52090/'),
-          SizedBox(width: 10),
-          NavBarItemWithIcon(
-              text: 'linkedIn',
-              icon: ImageAssetConstants.linkedIn,
-              url: 'https://www.linkedin.com/in/khalid-al-saleh-3561881a8/'),
-          SizedBox(width: 50),
-        ])
-      ])
-    ]);
+          ],
+        ),
+      ],
+    );
     List<Widget>? navBarColumn = [
       NavBarItem(
-          text: 'Home',
-          onTap: () {
-            collapsableHeight.value = 0.0;
-          }),
+        text: 'Home',
+        onTap: () {
+          collapsableHeight.value = 0.0;
+        },
+      ),
       const SizedBox(width: 10),
       NavBarItem(
-          text: 'Skills',
-          onTap: () {
-            scrollToWidgetByKey(skillsKey);
+        text: 'Skills',
+        onTap: () {
+          scrollToWidgetByKey(skillsKey);
 
-            collapsableHeight.value = 0.0;
-          }),
+          collapsableHeight.value = 0.0;
+        },
+      ),
       const SizedBox(width: 10),
       NavBarItem(
-          text: 'Intrests',
+          text: 'Interests',
           onTap: () {
             scrollToWidgetByKey(intrestsKey);
             collapsableHeight.value = 0.0;
@@ -142,7 +131,10 @@ class NavBar extends StatelessWidget {
                   children: [
                     Padding(
                         padding: EdgeInsets.only(left: width * 0.04),
-                        child: Logo(width: width,scrollController: scrollController,)),
+                        child: Logo(
+                          width: width,
+                          scrollController: scrollController,
+                        )),
                     NavBarButton(
                         onPressed: () {
                           if (collapsableHeight.value == 0.0) {
