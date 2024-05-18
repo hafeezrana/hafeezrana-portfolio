@@ -1,8 +1,8 @@
+import 'package:animated_text_kit/animated_text_kit.dart';
 import 'package:flutter/material.dart';
 import 'package:google_fonts/google_fonts.dart';
 import 'package:portfolio/utils/custom_colors.dart';
 import 'package:url_launcher/url_launcher.dart';
-import 'package:animated_text_kit/animated_text_kit.dart';
 
 class Description extends StatelessWidget {
   final bool isVertical;
@@ -51,7 +51,7 @@ class Description extends StatelessWidget {
               pause: const Duration(seconds: 2),
               animatedTexts: [
                 TyperAnimatedText(
-                  "I'm Hafeez Rana seasonal flutter developer with hands on experience in building high quality hybrid mobile applications using flutter framework",
+                  "I'm Hafeez Rana seasonal flutter developer with hands on experience in building high quality hybrid mobile applications using flutter",
                   textAlign: isVertical ? TextAlign.center : TextAlign.start,
                   speed: const Duration(milliseconds: 50),
                   textStyle: GoogleFonts.getFont(

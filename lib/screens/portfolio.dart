@@ -4,8 +4,8 @@ import 'package:portfolio/utils/breakpoints.dart';
 import 'package:portfolio/utils/custom_colors.dart';
 import 'package:portfolio/widgets/footer.dart';
 import 'package:portfolio/widgets/lower_container.dart';
-import 'package:portfolio/widgets/upper_container.dart';
 import 'package:portfolio/widgets/nav_bar.dart';
+import 'package:portfolio/widgets/upper_container.dart';
 
 class Portfolio extends StatefulWidget {
   const Portfolio({Key? key}) : super(key: key);
@@ -19,6 +19,7 @@ class _PortfolioState extends State<Portfolio> {
   late final GlobalKey intrestsKey;
   late final GlobalKey skillsKey;
   late final GlobalKey homeKey;
+  // late final GlobalKey projectKey;
   late final ScrollController scrollController;
   late final RxBool showFloatingButton;
 
@@ -113,22 +114,29 @@ class _PortfolioState extends State<Portfolio> {
                   const SizedBox(height: 130),
                   UpperContainer(width: width),
                   LowerContainer(
-                      width: width,
-                      intrests: intrests,
-                      intrestsKey: intrestsKey,
-                      skillsKey: skillsKey),
+                    width: width,
+                    intrests: intrests,
+                    intrestsKey: intrestsKey,
+                    skillsKey: skillsKey,
+
+                    // projectKey: projectKey
+                  ),
                   Container(
                     width: width,
                     height: 0.1,
-                    color:CustomColors.gray,
+                    color: CustomColors.gray,
                   ),
-                  Footer(width: width,scrollController: scrollController,),
+                  Footer(
+                    width: width,
+                    scrollController: scrollController,
+                  ),
                 ],
               ),
               NavBar(
                 width: width,
                 skillsKey: skillsKey,
                 intrestsKey: intrestsKey,
+                // projectKey: projectKey,
                 key: homeKey,
                 scrollController: scrollController,
               ),

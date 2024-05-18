@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:flutter/services.dart';
-import 'package:portfolio/screens/portfolio.dart';
 import 'package:portfolio/utils/custom_colors.dart';
+import 'package:portfolio/widgets/nav/home_page.dart';
 
 void main() {
   SystemChrome.setSystemUIOverlayStyle(const SystemUiOverlayStyle(
@@ -15,7 +15,7 @@ void main() {
       highlightColor: CustomColors.primary,
     ),
     title: 'hafeezrana',
-    home: const Portfolio(),
+    home: const MyHomePage(),
     debugShowCheckedModeBanner: false,
   ));
 }

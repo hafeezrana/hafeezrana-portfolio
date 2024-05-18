@@ -4,7 +4,7 @@ This project designed using figma and built using flutter.
 
 
 ## Demo URL
-https://khalid-alsaleh-dev.github.io/#/
+https://Hafeez-Rana-dev.github.io/#/
 
   
 
@@ -16,7 +16,7 @@ https://khalid-alsaleh-dev.github.io/#/
 - A little knowledge of Dart and Flutter
 
 ## Download The Project,Install Dependencies && Run The Project 
-- Run the next command to Clone the repo to your machine `git clone https://github.com/khalid-alsaleh-dev/FlutterPortfolio.git`
+- Run the next command to Clone the repo to your machine `git clone https://github.com/Hafeez-Rana-dev/FlutterPortfolio.git`
 - Run the next commands to install the required dependencies
   1. `cd <../path/to/FlutterPortfolio>`
   2. `flutter pub get`
@@ -28,4 +28,4 @@ https://khalid-alsaleh-dev.github.io/#/
 ![Capture2](https://user-images.githubusercontent.com/67127338/148690849-7989a4a9-b791-4230-a7b7-d67c6c9f9e5f.PNG)
 
 ## 👨‍💻 Auther
-Khalid Al-Saleh  khalidlionel.2089@gmail.com
+Hafeez Rana  ranahafeez6820@gmail.com

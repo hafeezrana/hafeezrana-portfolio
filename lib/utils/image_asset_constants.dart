@@ -11,4 +11,10 @@ class ImageAssetConstants {
   static const String python = 'assets/images/python.png';
   static const String hafeez = 'assets/images/hafeez.jpg';
   static const String backendIcon = 'assets/images/backend_icon.png';
+  //===========Compny Logo====================//
+  static const String sabrosoLogo = 'assets/images/Sabroso.PNG';
+  static const String devLynxLogo = 'assets/images/DevLynx.PNG';
+  static const String ncbaLogo = 'assets/images/NCBA.png';
+
+  static const String twitter = 'assets/Icons/twitter.png';
 }

@@ -31,20 +31,20 @@ class Footer extends StatelessWidget {
               ? Row(
                   mainAxisAlignment: MainAxisAlignment.spaceEvenly,
                   children: [
-                    Text('Copyright © 2021 khalid-alsaleh-dev',
+                    Text('Copyright © 2021 Hafeez-Rana-dev',
                         style: GoogleFonts.getFont('Delius',
                             color: CustomColors.gray, fontSize: 14)),
                     Text('All rights reserved',
                         style: GoogleFonts.getFont('Delius',
                             color: CustomColors.gray, fontSize: 14)),
-                    Text('khalidlionel.2089@gmail.com',
+                    Text('ranahafeez6820@gmail.com',
                         style: GoogleFonts.getFont('Delius',
                             color: CustomColors.gray, fontSize: 14)),
                   ],
                 )
               : Column(
                   children: [
-                    Text('Copyright © 2021 khalid-alsaleh-dev',
+                    Text('Copyright © 2021 Hafeez-Rana-dev',
                         style: GoogleFonts.getFont('Delius',
                             color: CustomColors.gray, fontSize: 14)),
                     const SizedBox(height: 10),
@@ -52,12 +52,12 @@ class Footer extends StatelessWidget {
                         style: GoogleFonts.getFont('Delius',
                             color: CustomColors.gray, fontSize: 14)),
                     const SizedBox(height: 10),
-                    Text('khalidlionel.2089@gmail.com',
+                    Text('ranahafeez6820@gmail.com',
                         style: GoogleFonts.getFont('Delius',
                             color: CustomColors.gray, fontSize: 14)),
                   ],
                 ),
-          SizedBox(height: 30),
+          const SizedBox(height: 30),
           const Row(
             mainAxisAlignment: MainAxisAlignment.center,
             children: [
@@ -66,19 +66,18 @@ class Footer extends StatelessWidget {
                   NavBarItemWithIcon(
                     text: 'github',
                     icon: ImageAssetConstants.github,
-                    url: 'https://github.com/khalid-alsaleh-dev',
+                    url: 'https://github.com/Hafeez-Rana-dev',
                   ),
                   SizedBox(width: 10),
                   NavBarItemWithIcon(
-                      text: 'facebook',
+                      text: 'Twitter',
                       icon: ImageAssetConstants.facebook,
-                      url: 'https://www.facebook.com/khalid.alsaleh.52090/'),
+                      url: 'https://www.facebook.com/mr.hafeezrana'),
                   SizedBox(width: 10),
                   NavBarItemWithIcon(
                       text: 'linkedIn',
                       icon: ImageAssetConstants.linkedIn,
-                      url:
-                          'https://www.linkedin.com/in/khalid-al-saleh-3561881a8/'),
+                      url: 'https://www.linkedin.com/in/hafeez-rana/'),
                   SizedBox(width: 50),
                 ],
               )

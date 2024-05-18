@@ -2,23 +2,23 @@ import 'package:flutter/material.dart';
 import 'package:get/get.dart';
 import 'package:portfolio/utils/breakpoints.dart';
 import 'package:portfolio/utils/custom_colors.dart';
-import 'package:portfolio/utils/image_asset_constants.dart';
 import 'package:portfolio/widgets/logo.dart';
 import 'package:portfolio/widgets/nav_bar_button.dart';
 import 'package:portfolio/widgets/nav_bar_item.dart';
-import 'package:portfolio/widgets/nav_bar_item_with_icon.dart';
 import 'package:url_launcher/url_launcher.dart';
 
 class NavBar extends StatelessWidget {
   final double width;
   final GlobalKey intrestsKey;
   final GlobalKey skillsKey;
+  // final GlobalKey projectKey;
   final ScrollController scrollController;
   late final RxDouble collapsableHeight;
   NavBar(
       {required this.width,
       required this.intrestsKey,
       required this.skillsKey,
+      // required this.projectKey,
       required this.scrollController,
       Key? key})
       : super(key: key) {
@@ -57,8 +57,15 @@ class NavBar extends StatelessWidget {
               onTap: () => scrollToWidgetByKey(skillsKey),
             ),
             NavBarItem(
-              text: 'Interests',
+              text: 'Education',
+              onTap: () {},
+              // onTap: () => scrollToWidgetByKey(intrestsKey),
+            ),
+            NavBarItem(
+              text: 'Projects',
+              // onTap: () {},
               onTap: () => scrollToWidgetByKey(intrestsKey),
+              //  => scrollToWidgetByKey(projectKey),
             ),
             const SizedBox(width: 60),
           ],
@@ -91,16 +98,16 @@ class NavBar extends StatelessWidget {
       NavBarItem(
           text: 'github',
           onTap: () async {
-            await launch('https://github.com/khalid-alsaleh-dev');
+            await launch('https://github.com/hafeezrana');
           }),
       NavBarItem(
           text: 'facebook',
-          onTap: () async =>
-              await launch('https://www.facebook.com/khalid.alsaleh.52090/')),
+          onTap: () async => await launch(
+              'https://www.facebook.com/profile.php?id=100059808176019')),
       NavBarItem(
           text: 'linkedIn',
-          onTap: () async => await launch(
-              'https://www.linkedin.com/in/khalid-al-saleh-3561881a8/')),
+          onTap: () async =>
+              await launch('https://www.linkedin.com/in/hafeez-rana/')),
     ];
     return Stack(
       children: [
